@@ -1,0 +1,25 @@
+@mixin respond-phone {
+    @media (max-width: 600){@content};
+}
+/*1em alwyes equel to  the default font size of the browswer no matter what we have in our definition
+1 em = 16 px
+600 px (600/16) = 37.5em
+900/16
+1200/16
+1800/16
+*/
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width : 37.5em){ @content };
+    }
+    @if $breakpoint == tap-land { //width<900?
+        @media (max-width : 75em){ @content };
+    }
+    @if $breakpoint == tap-port { //width<600?
+        @media (max-width : 56.25em){@content};
+    }
+
+    @if $breakpoint == big-desktop {
+        @media (min-width : 112.5em){@content};
+    }
+}

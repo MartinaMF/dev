@@ -1,0 +1,23 @@
+.header {
+  position: relative;
+    /*at every point the height should be 95% of the viewport height*/
+    height: 95vh;
+    background-image:linear-gradient(to left,
+     rgba($color-primary,0.8),
+      rgba($color-primary-dark, 0.8)),
+       url(../images/bg.jpg);
+    background-size: cover;
+    /*make the top of the img alwayes stayes at the top of the container ccould be(center,bottom)*/
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    position: relative;
+    &__text-box{
+      position: absolute;
+      top :40%;
+      left: 50%;
+      text-align: center;
+      /*to make it perfectly centered*/
+      transform: translate(-50% , -50%);
+    }
+  }
+  

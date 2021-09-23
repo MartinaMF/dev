@@ -1,0 +1,47 @@
+
+.circle {
+    display:block;
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin: 6px 20px 20px;
+}
+.section-skills h3 {
+    display:block;
+    color: $color-primary-dark;
+    text-align: center;
+    padding: 10rem auto;
+}
+/*.round{
+    min-height :255px;
+    width: 255px;
+    background-color: blue;
+    margin-top: 30px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.round strong {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin-top: -50%;
+    transform: translate(-50%);
+    font-size: 40px;
+    color: #212121;
+    font-weight: 100;
+}
+.round span{
+    display:block;
+    color: #999;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.round span i{
+    color: #ff5c5c;
+    font-size: 22px;
+    margin-right: 7px;
+}
+*/

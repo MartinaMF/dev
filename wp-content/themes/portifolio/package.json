@@ -1,0 +1,27 @@
+{
+  "name": "npmtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel watch src/js/main.js src/sass/main.scss --public-url /wp-content/themes/portfolio/dist",
+    "build": "parcel build src/js/main.js src/sass/main.scss  --public-url /wp-content/themes/portfolio/dist"
+  },
+  "author": "martina",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.1",
+    "flickity": "^2.2.2",
+    "jquery": "^3.6.0",
+    "jquery-circle-progress": "^1.2.2",
+    "jquery-circles-progressbar": "^0.4.4",
+    "live-server": "^1.2.1",
+    "progressbar": "^1.3.0",
+    "swiper": "^6.4.8"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.32.5"
+  }
+}
