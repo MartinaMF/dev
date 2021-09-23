@@ -26,7 +26,7 @@ get_header();
                 Martina Asaad
               </h3>
               <p>
-                A front-end and wordpress developer based in the united states passionate about 
+                A PHP and wordpress developer based in the united states passionate about 
                 creating interactive applications 
                 with solid knowledge of the back-end and very good eyes for design .
                 I am exited to make the leap and continue sharpen my skills with the right company
