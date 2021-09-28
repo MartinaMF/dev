@@ -18,18 +18,16 @@ get_header();
         <div class="row">
           <div class="story">
             <figure class="story__shape">
-              <img src="<?php echo get_theme_file_uri('src/images/profile.jpg')?>" alt="story image" class="story__img">
+              <img src="<?php echo get_field("about_me_photo")?>" alt="story image" class="story__img">
               <figcaption class="story__caption">name martina</figcaption>
             </figure>
             <div class="story__text">
               <h3 class="heading-tertiary u-margin-bottom-small">
-                Martina Asaad
+                <?php echo get_field("about_me_heading")?>
               </h3>
               <p>
-                A PHP and wordpress developer based in the united states passionate about 
-                creating interactive applications 
-                with solid knowledge of the back-end and very good eyes for design .
-                I am exited to make the leap and continue sharpen my skills with the right company
+                <?php echo get_field("about_me_text");?>
+                <?php get_template_part("template");?>
               </p>  
             </div>
           </div>
