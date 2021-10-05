@@ -27,7 +27,7 @@ get_header();
               </h3>
               <p>
                 <?php echo get_field("about_me_text");?>
-                <?php get_template_part("template");?>
+             
               </p>  
             </div>
           </div>
@@ -58,6 +58,8 @@ get_header();
                   <p class="feature-box__text">
                     <?php the_content();?>
                   </p>
+                  <a href="<?php echo get_field("project_link");?>" target=_blank>project repo</a>
+                  <img src="<?php echo get_field("project_img");?>" alt="">
               </div>
             </div>
           <?php
@@ -75,35 +77,32 @@ get_header();
             </h2>
           </div>
           <div class="row">
-            <div class="col-sm">
-              <div class="circle" id="circle-a">
-              </div>
-              <h3 class="heading-tertiary u-margin-bottom-small">
-                <span class="heading-tertiary-title">HTML & CSS</span>
-              </h3>
-            </div>
-            <div class="col-sm">
-              <div class="circle" id="circle-b">
-              </div>
-              <h3 class="heading-tertiary u-margin-bottom-small">
-              <span class="heading-tertiary-title">JAVASCRIPT</span>
-              </h3>
-            </div>
-            <div class="col-sm">
-              <div class="circle" id="circle-c">
-              </div>
-              <h3 class="heading-tertiary u-margin-bottom-small">
-              <span class="heading-tertiary-title">WORDPRESS</span>
-              </h3>
-            </div>
-            <div class="col-sm">
-              <div class="circle" id="circle-d">
-              </div>
-              <h3 class="heading-tertiary u-margin-bottom-small">
-              <span class="heading-tertiary-title">PHP</span>
-              </h3>
+          <div class="col-sm">
+          <div class="circlechart" 
+                data-percentage="80">
+                HTML
             </div>
           </div>
+          <div class="col-sm">
+          <div class="circlechart" 
+                data-percentage="80">
+                CSS
+            </div>
+          </div>
+          <div class="col-sm">
+          <div class="circlechart" 
+                data-percentage="75">
+                wordpress
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="circlechart" 
+                data-percentage="75">
+                PHP
+            </div>
+            </div>
+          </div>
+
     </section>
 
 

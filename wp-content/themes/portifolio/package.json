@@ -12,6 +12,7 @@
   "dependencies": {
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^5.0.1",
+    "css": "^3.0.0",
     "flickity": "^2.2.2",
     "jquery": "^3.6.0",
     "jquery-circle-progress": "^1.2.2",

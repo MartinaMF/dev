@@ -1,20 +1,16 @@
 import 'bootstrap';
 
-import {circlesProgress} from './circlesProgress';
 import {smoothNavigation} from './smoothNavigation';
-import {revealSections} from './revealSections'
-
+import {revealSections} from './revealSections';
 
 const sectionSkills = document.querySelector('.section-skills');
 const AllSections = document.querySelectorAll('.section');
 
+
+
 smoothNavigation();
 
-const sectionSkillsObserver = new IntersectionObserver(circlesProgress , {
-  root: null,
-  threshold: 0.5
-});
-sectionSkillsObserver.observe(sectionSkills);
+
 
 const sectionsObserver = new IntersectionObserver(revealSections , {
   root : null,
@@ -22,7 +18,8 @@ const sectionsObserver = new IntersectionObserver(revealSections , {
 });
 AllSections.forEach(function(section){
   sectionsObserver.observe(section);
-  section.classList.add('section--hidden');
+  
+  
 });
 
 
