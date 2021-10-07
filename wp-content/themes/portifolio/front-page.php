@@ -5,7 +5,7 @@ get_header();
 <section class="section section-about_me" id="about_me">
       <div class="bg-video">
         <video class="bg-video__content" autoplay muted loop>
-          <source src="src/images/Woman Overlooking Landscape.mp4" type="video/mp4">
+          <source src="<?php echo get_theme_file_uri()."/src/images/Woman Overlooking Landscape.mp4"?>" type="video/mp4">
             your browser is not supported
         </video>
       </div>
@@ -55,15 +55,16 @@ get_header();
               <div class="feature-box">
                   <i class="feature-box__icon icon-basic-world"></i>
                   <h3 class="heading-tertiary u-margin-buttom-small"><?php the_title();?></h3>
+                  <img class="feature-box__img" src="<?php echo get_field("project_img");?>" alt="project-img">
                   <p class="feature-box__text">
                     <?php the_content();?>
                   </p>
                   <a href="<?php echo get_field("project_link");?>" target=_blank>project repo</a>
-                  <img src="<?php echo get_field("project_img");?>" alt="">
               </div>
             </div>
           <?php
         }
+        wp_reset_query();
         ?>
 
         </div>
@@ -77,27 +78,27 @@ get_header();
             </h2>
           </div>
           <div class="row">
-          <div class="col-sm">
+          <div class="col-md-3 col-sm-12 text-center u-margin-bottom-big">
           <div class="circlechart" 
                 data-percentage="80">
-                HTML
+                HTML5 & CSS3
             </div>
           </div>
-          <div class="col-sm">
+          <div class="col-md-3 col-sm-12 text-center u-margin-bottom-big">
           <div class="circlechart" 
-                data-percentage="80">
-                CSS
+                data-percentage="70">
+                Javascript & jQuery
             </div>
           </div>
-          <div class="col-sm">
+          <div class="col-md-3 col-sm-12 text-center u-margin-bottom-big">
           <div class="circlechart" 
                 data-percentage="75">
                 wordpress
             </div>
           </div>
-          <div class="col-sm">
+          <div class="col-md-3 col-sm-12 text-center u-margin-bottom-big">
             <div class="circlechart" 
-                data-percentage="75">
+                data-percentage="70">
                 PHP
             </div>
             </div>
@@ -115,6 +116,12 @@ get_header();
         </div>
           <div class="row">
               <div class="book">
+              <?php
+              while(have_posts()){
+                  the_post();
+                  the_content();
+              } 
+              ?>
               </div>
             </div>
       </div>

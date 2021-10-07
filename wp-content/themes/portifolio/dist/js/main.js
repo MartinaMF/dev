@@ -8090,6 +8090,7 @@ var sectionsObserver = new IntersectionObserver(_revealSections.revealSections, 
 });
 AllSections.forEach(function (section) {
   sectionsObserver.observe(section);
+  section.classList.add('section--hidden');
 });
 /* window.onscroll = function() {
    if (window.scrollY > containerTop && !handlerFired ) {
@@ -8157,7 +8158,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61162" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58858" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

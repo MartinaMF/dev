@@ -33,7 +33,7 @@
       <div class="navbar-nav">
         
         <a class="nav-link active" aria-current="page" href="#home">Home</a>
-        <a class="nav-link" href="<?php echo site_url('/about');?>">About me</a>
+        <a class="nav-link" href="#about_me">About me</a>
         <a class="nav-link skills" href="#skills">Skills</a>
         <a class="nav-link" href="#projects">Projects</a>
         <a class="nav-link" href="#contact_me">Contact me</a>

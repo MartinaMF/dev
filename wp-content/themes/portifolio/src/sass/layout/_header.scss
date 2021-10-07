@@ -9,7 +9,7 @@
     background-size: cover;
     /*make the top of the img alwayes stayes at the top of the container ccould be(center,bottom)*/
     background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    //clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     position: relative;
     &__text-box{
       position: absolute;

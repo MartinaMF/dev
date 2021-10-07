@@ -20,4 +20,14 @@
         transform: translateY(-2rem) scale(1.03);
 
     }
+    &__img{
+        width: 80%;
+        height: 150px;
+        object-fit: cover;
+        transition:  .2s;
+        border-radius: 5px;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
 }
